@@ -229,7 +229,7 @@ ImageView facelogin;
                             FirebaseUser firebaseUser = mAuth.getCurrentUser();
 //                            String id=firebaseUser.getUid();
 //                            Log.d("dddddddddddddd","dddddddddddddddd=="+id);
-                            Toast.makeText(getContext(), "fgkfhgfglkf", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), "Log In", Toast.LENGTH_SHORT).show();
                            Intent intent=new Intent(getActivity(),HomePAge.class);
                             startActivity(intent);
 

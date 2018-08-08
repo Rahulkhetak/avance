@@ -14,9 +14,8 @@ public class Doc_Read extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=LayoutInflater.from(container.getContext()).inflate(R.layout.doc_read,container,false);
 
-
-
-
         return view;
+
     }
+
 }
