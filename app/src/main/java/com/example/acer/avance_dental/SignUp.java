@@ -9,6 +9,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -116,8 +117,6 @@ public class SignUp extends Fragment implements View.OnClickListener {
         else{
             ApiSinup();
         }
-
-
     }
 
     public void init(){
@@ -136,7 +135,7 @@ void signUpButtongGetText(){
     tokenStr =sharedPreferences.getString(AppConfig.TokenKey,"");
 
   nameStr=  name.getText().toString();
-//passwordStr=password.getText().toString();
+passwordStr=password.getText().toString();
 //confirmPasswordStr=repassword.getText().toString();
 emailStr=email.getText().toString();
 numberStr=number.getText().toString();
@@ -149,31 +148,33 @@ void ApiSinup() {
 
     final List list1 = new ArrayList();
     list = new ArrayList();
+mAPIService.signUp(nameStr,numberStr,emailStr,passwordStr,tokenStr).enqueue(new Callback<SignupModel>() {
+    @Override
+    public void onResponse(Call<SignupModel> call, Response<SignupModel> response) {
+        int code=response.code();
 
-
-    mAPIService.signUp(nameStr,numberStr,emailStr,confirmPasswordStr,tokenStr).enqueue(new Callback<SignupModel>() {
-        @Override
-        public void onResponse(Call<SignupModel> call, Response<SignupModel> response) {
-            String success= response.body().getSuccess();
-          int code=  response.body().getCode();
-          String failure=response.body().getFailure();
-          if(success==null){
-              Toast.makeText(getContext(), "code"+code+"failure"+failure, Toast.LENGTH_SHORT).show();
-          }else
-          {
-              Toast.makeText(getContext(), "success"+success, Toast.LENGTH_SHORT).show();
-          }
-
+        if(code==200){
+            Toast.makeText(getContext(), "Login success ", Toast.LENGTH_SHORT).show();
         }
+        else if(code==409){
+            Toast.makeText(getContext(), "Number Already exist ", Toast.LENGTH_SHORT).show();
+        }
+else if(code==410){
+            Toast.makeText(getContext(), "Email Already exist", Toast.LENGTH_SHORT).show();
+        }
+else if(code==400){
+            Toast.makeText(getContext(), "Failed", Toast.LENGTH_SHORT).show();
+        }
+    }
 
-        @Override
-        public void onFailure(Call<SignupModel> call, Throwable t) {
+    @Override
+    public void onFailure(Call<SignupModel> call, Throwable t) {
 InternetConnection();
-        }
-    });
 
-
+    }
+});
 }
+
     public  void InternetConnection(){
 
 

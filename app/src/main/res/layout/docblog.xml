@@ -3,7 +3,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:clickable="true"
     android:layout_height="match_parent">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:background="#488aff"
@@ -26,15 +25,10 @@
             android:textSize="18dp"
             android:layout_gravity="center_vertical"/>
     </LinearLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:id="@+id/fragdoc"
-        android:layout_height="match_parent">
 <android.support.v7.widget.RecyclerView
     android:layout_width="match_parent"
     android:id="@+id/recid"
     android:layout_height="match_parent">
 
 </android.support.v7.widget.RecyclerView>
-    </FrameLayout>
 </LinearLayout>

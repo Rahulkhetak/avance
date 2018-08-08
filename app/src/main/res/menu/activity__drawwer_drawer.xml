@@ -26,7 +26,7 @@
     <group android:id="@+id/share_" >
              <item
                 android:id="@+id/share_app"
-                android:title="Refer A Friendp" />
+                android:title="Share App" />
     </group>
 
     <group android:id="@+id/rate_" >

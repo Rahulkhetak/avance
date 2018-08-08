@@ -404,8 +404,6 @@
                                             <ImageView
                                                 android:layout_width="match_parent"
                                                 android:layout_height="60dp"
-
-
                                                 android:id="@+id/ic_contatc_us"
                                                 android:src="@drawable/ic_contatc_us"/>
 
@@ -431,7 +429,7 @@
                             android:layout_gravity="center"
                             android:textAllCaps="false"
                             android:layout_marginTop="10dp"
-                            android:text="Book An Appointment"
+                            android:text="Book an Appointment"
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="10dp"/>
