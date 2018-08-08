@@ -15,15 +15,14 @@
             android:layout_marginTop="20dp"
             android:layout_height="60dp">
 
-            <!--<ImageView-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_weight="0.2"-->
-                <!--android:layout_height="20dp"-->
-             <!---->
-                <!--android:id="@+id/backkkkkkk"-->
-                <!--android:src="@drawable/leftarrow"-->
-                <!--android:layout_gravity="center"-->
-                <!--/>-->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="20dp"
+                android:id="@+id/gallk"
+                android:src="@drawable/leftarrow"
+                android:layout_gravity="center"
+                />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -32,7 +31,6 @@
                 android:textColor="#fff"
                 android:textStyle="bold"
                 android:textSize="18dp"
-                android:gravity="center"
                 android:layout_gravity="center_vertical"/>
         </LinearLayout>
 

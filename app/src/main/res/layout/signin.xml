@@ -21,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <EditText
+            android:id="@+id/number"
             android:inputType="phone"
             android:paddingLeft="15dp"
             android:hint="Phone Number"
@@ -32,6 +33,7 @@
             android:layout_height="40dp" />
 
         <EditText
+            android:id="@+id/password"
             android:hint="Password"
             android:paddingLeft="15dp"
             android:background="#e6e6e6"
@@ -63,11 +65,11 @@
             android:layout_gravity="center"
             android:layout_height="40dp" />
 
-        <Button
+        <ImageView
             android:textColor="#fff"
             android:textSize="15dp"
             android:id="@+id/faclogin"
-            android:background="@drawable/facebook_btn"
+            android:src="@drawable/facebook_btn"
             android:layout_marginTop="15dp"
             android:layout_width="270dp"
             android:layout_gravity="center"

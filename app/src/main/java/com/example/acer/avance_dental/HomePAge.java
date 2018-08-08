@@ -2,6 +2,7 @@ package com.example.acer.avance_dental;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Handler;
@@ -26,6 +27,7 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
+import com.example.acer.avance_dental.AppUtils.AppConfig;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.ConnectionResult;
@@ -46,7 +48,8 @@ public class HomePAge extends AppCompatActivity implements View.OnScrollChangeLi
     CircleIndicator indicator;
     RelativeLayout relativeLayout;
 DrawerLayout drawerLayout;
-    ImageView open_drawer,back_drawer;
+    ImageView open_drawer;
+    SharedPreferences sharedPreferences;
     public static final int RequestSignInCode = 7;
 
     // Firebase Auth Object.
@@ -80,10 +83,7 @@ ImageView about,apoiment,availibty,blog,contact,gallryy,rache,service,testmoinal
         testmoinal = findViewById(R.id.ic_testimonials);
         relativeLayout=findViewById(R.id.relative);
         scrollView=findViewById(R.id.scroll);
-        back_drawer=findViewById(R.id.backkkkkkk);
-
         open_drawer=findViewById(R.id.open_drawer);
-
         GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
@@ -100,12 +100,14 @@ ImageView about,apoiment,availibty,blog,contact,gallryy,rache,service,testmoinal
                 .build();
 
         open_drawer.setOnClickListener(this);
+//        drawerLayout.findViewById(R.id.drawer);
+//        drawerLayout.openDrawer(Gravity.START);
+
 
 
         scrollView.setOnScrollChangeListener(this);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer,  R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -180,16 +182,7 @@ ImageView about,apoiment,availibty,blog,contact,gallryy,rache,service,testmoinal
                 transaction.commit();
             }
         });
-        service.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentManager fragmentManager=getSupportFragmentManager();
-                FragmentTransaction transaction=fragmentManager.beginTransaction();
-                transaction.replace(R.id.homefrag,new ServiceC());
-                transaction.addToBackStack(null);
-                transaction.commit();
-            }
-        });
+
     }
 
     private void init() {
@@ -280,14 +273,19 @@ logout();
                 new ResultCallback<Status>() {
                     @Override
                     public void onResult(@NonNull Status status) {
+                        sharedPreferences = getSharedPreferences(AppConfig.SharedPref , Context.MODE_PRIVATE);
 
+                        sharedPreferences.edit().clear().commit();
+sharedPreferences.edit().remove(AppConfig.Keyemail).commit();
+sharedPreferences.edit().remove(AppConfig.Keytoken).commit();
+sharedPreferences.edit().remove(AppConfig.Keyuid).commit();
 // Write down your any code here which you want to execute After Sign Out.
 
 // Printing Logout toast message on screen.
+                        finish();
                         Toast.makeText(HomePAge.this, "Logout Successfully", Toast.LENGTH_LONG).show();
-//Intent intent=new Intent(HomePAge.this,ViewPager.class);
-//startActivity(intent);
-finish();
+Intent intent=new Intent(HomePAge.this,ViewPager.class);
+startActivity(intent);
                     }
                 });
 
@@ -296,7 +294,6 @@ finish();
 
     @Override
     public void onClick(View v) {
-
         if(v.getId()==R.id.open_drawer){
             drawerLayout.openDrawer(Gravity.START);
         }
@@ -335,14 +332,10 @@ finish();
 
             return myImageLayout;
         }
+
         @Override
         public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
             return view.equals(object);
         }
-    }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        finish();
     }
 }
