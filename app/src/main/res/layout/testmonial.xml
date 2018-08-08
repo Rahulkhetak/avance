@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/blur"/>
+    <RelativeLayout
+        android:background="#00ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#488aff"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="20dp"
+                    android:id="@+id/gallback33"
+                    android:src="@drawable/leftarrow"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Testimonials"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#7dffffff"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/userr" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Client Name: "
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Rahul Jaikar"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="10dp"
+                        android:gravity="end"
+                        android:text="Date 20-11-2017"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="My dentist is possibly the best dentist I have ever seen both from ability and their fantastic people skills. I was made to feel comfortable in what was not simple procedures. Both dental nurses that were involved with my visits were fantastic and a credit to your practice. A personal thank you from myself for such exceptional visits and I am extremely happy with the work done! Thank you. Anon, NHS Choices (Messenger Dental Practice, Gloucestershire)"
+                    android:textColor="#000"
+                    android:textSize="10dp" />
+            </LinearLayout>
+</ScrollView>
+
+        </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

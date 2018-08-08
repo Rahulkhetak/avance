@@ -80,7 +80,7 @@ ImageView about,apoiment,availibty,blog,contact,gallryy,rache,service,testmoinal
         testmoinal = findViewById(R.id.ic_testimonials);
         relativeLayout=findViewById(R.id.relative);
         scrollView=findViewById(R.id.scroll);
-        back_drawer=findViewById(R.id.backkkkkkk);
+
 
         open_drawer=findViewById(R.id.open_drawer);
 
@@ -190,6 +190,31 @@ ImageView about,apoiment,availibty,blog,contact,gallryy,rache,service,testmoinal
                 transaction.commit();
             }
         });
+
+
+        testmoinal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                FragmentManager fragmentManager=getSupportFragmentManager();
+                FragmentTransaction transaction=fragmentManager.beginTransaction();
+                transaction.replace(R.id.homefrag,new Testmoinal_Frag());
+                transaction.addToBackStack(null);
+                transaction.commit();
+
+
+
+
+
+            }
+        });
+
+
+
+
+
+
     }
 
     private void init() {
@@ -340,9 +365,9 @@ finish();
             return view.equals(object);
         }
     }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        finish();
-    }
+//    @Override
+//    public void onBackPressed() {
+//    super.onBackPressed();
+//    finish();
+//}
 }
