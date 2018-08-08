@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:showIn="navigation_view">
+
+        <group android:checkableBehavior="single">
+    <group android:id="@+id/homm">
+            <item
+                android:id="@+id/hommee"
+
+                android:title="Home" />
+    </group>
+    <group android:id="@+id/contact_">
+            <item
+                android:id="@+id/contact_uss"
+
+                android:title="Contact us" />
+
+</group>
+
+    <group android:id="@+id/tetssa" >
+            <item
+                android:id="@+id/tetss"
+                android:title="Testimonials" />
+    </group>
+    <group android:id="@+id/share_" >
+             <item
+                android:id="@+id/share_app"
+                android:title="Refer A Friendp" />
+    </group>
+
+    <group android:id="@+id/rate_" >
+            <item
+                android:id="@+id/rate_us"
+                android:title="Rate us" />
+    </group>
+
+    <group android:id="@+id/about_" >
+            <item
+                android:id="@+id/about_us"
+                android:title="About App" />
+
+</group>
+
+            <group android:id="@+id/noti" >
+                <item
+                    android:id="@+id/notification"
+                    android:title="Notification" />
+
+            </group>
+
+            <group android:id="@+id/logout" >
+                <item
+                    android:id="@+id/Log_out"
+                    android:title="Log out" />
+
+            </group>
+        </group>
+
+    </menu>

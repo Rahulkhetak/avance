@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="57dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/about"/>
+        <RelativeLayout
+            android:background="#00ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/avail_frame">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent">
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0dp"-->
+                        <!--android:layout_weight="0.1">-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="#488aff"
+                            android:layout_weight="0.1"
+                            android:layout_height="0dp">
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.2"
+                                android:id="@+id/about_back"
+                                android:layout_height="20dp"
+                                android:src="@drawable/leftarrow"
+                                android:layout_gravity="center"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="About Dental Care"
+                                android:textColor="#fff"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:layout_gravity="center_vertical"/>
+                        </LinearLayout>
+                    <!--</android.support.v7.widget.CardView>-->
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/logo"/>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:text="Why we are?
+amet a adipcatinlorem lodr sit amet,constudolodr sit amet,constuctor adipcatinlorem ipumpsdolodr sit amet,consr adipcatin nulla.
+"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textColor="#313131"
+                                android:gravity="center_vertical"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.3">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="20K"
+                                    android:textSize="30dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="16"
+                                    android:textSize="30dp"
+                                    android:layout_weight="1"
+                                   android:gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="14"
+                                    android:textSize="30dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.5">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Happy
+Smiles"
+                                    android:textSize="20dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+
+                                    />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Years
+Experience"
+                                    android:textSize="20dp"
+                                    android:layout_weight="1.2"
+                                    android:gravity="center_horizontal"
+
+                                    />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Working
+  Hours"
+                                    android:textSize="20dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+
+                                    />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:text="Why we are unique?"
+                                android:textColor="#488aff"
+                                android:paddingLeft="10dp"
+                                android:textSize="15dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.8"
+                                android:textColor="#313131"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="amet,constuctor hdsndsndshdjdhshdsdh nlorem ipumpr adipcatinlorem ipumpsdo adipcatinlorem lodr sit amet,constudolodr sit amet,constuctor adipcatinlorem ipumpsdolodr sit amet,consr nulla.
+"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.8"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textColor="#313131"
+                                android:text="amet,constuctor ajd ajsd askjd lorem ipumpsdo adipcatinlorem lodr sit amet,constudolodr sit amet,constuctor adipcatinlorem ipumpsdolodr sit amet,consr nulla.
+"/>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+</RelativeLayout>

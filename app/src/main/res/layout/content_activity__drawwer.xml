@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.acer.avance_dental.HomePAge"
+    tools:showIn="@layout/app_bar_activity__drawwer">
+    <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        tools:context="com.example.acer.avance_dental.HomePAge">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+                <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true" />
+
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:background="#0b00ffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/homefrag"
+                android:clickable="true"
+                android:layout_height="match_parent">
+                <ScrollView
+
+                    android:id="@+id/scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <LinearLayout
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+
+                            >
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="20dp"
+                                android:paddingRight="140dp"
+                                android:id="@+id/open_drawer"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/menu_bar_32x29"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="140dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/notification"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="3dp"
+                            android:src="@drawable/logo" />
+                        <TextView
+                            android:text="Dr. Mohit Dhawan"
+                            android:textColor="#393b3e"
+                            android:layout_marginLeft="8dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center_vertical"
+                            android:textSize="20dp"
+                            android:paddingTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_contatc_us"/>
+                        <TextView
+                            android:textSize="12dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="5dp"
+                            android:text="M.D.S (Prosthodontice Implantology)"
+                            android:textColor="#3e3c3c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1.4"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="1.4"
+                                android:layout_height="0dp">
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v7.widget.CardView
+                                        app:cardCornerRadius="10sp"
+                                        android:layout_margin="7dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="90dp">
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="60dp"
+                                                android:id="@+id/ic_about_us"
+                                                android:src="@drawable/ic_about_us"/>
+
+                                            <TextView
+                                                android:layout_gravity="center"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#000"
+                                                android:textSize="13dp"
+                                                android:text="About Us" />
+                                        </LinearLayout>
+                                    </android.support.v7.widget.CardView>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v7.widget.CardView
+                                        app:cardCornerRadius="10sp"
+                                        android:layout_margin="7dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="90dp">
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="60dp"
+                                                android:id="@+id/ic_services"
+                                                android:src="@drawable/ic_services"/>
+
+                                            <TextView
+                                                android:layout_gravity="center"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Services"
+                                                android:textSize="13dp"
+                                                android:textColor="#000"
+                                                />
+                                        </LinearLayout>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v7.widget.CardView
+                                        app:cardCornerRadius="10sp"
+                                        android:layout_margin="7dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="90dp">
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="60dp"
+                                                android:id="@+id/ic_appointment"
+                                                android:src="@drawable/ic_appointment"/>
+
+                                            <TextView
+                                                android:layout_gravity="center"
+                                                android:layout_width="wrap_content"
+                                                android:textColor="#000"
+                                                android:textSize="13dp"
+                                                android:layout_height="wrap_content"
+                                                android:text="Appointment" />
+                                        </LinearLayout>
+                                    </android.support.v7.widget.CardView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v7.widget.CardView
+                                        app:cardCornerRadius="10sp"
+                                        android:layout_margin="7dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="90dp">
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="60dp"
+                                                android:id="@+id/ic_blog"
+                                                android:src="@drawable/ic_blog"/>
+
+                                            <TextView
+                                                android:layout_gravity="center"
+                                                android:textSize="13dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Doc Blog"
+                                                android:textColor="#000"/>
+                                        </LinearLayout>
+                                    </android.support.v7.widget.CardView>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v7.widget.CardView
+                                        app:cardCornerRadius="10sp"
+                                        android:layout_margin="7dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="90dp">
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="60dp"
+                                                android:id="@+id/ic_testimonials"
+                                                android:src="@drawable/ic_testimonials"/>
+
+                                            <TextView
+                                                android:layout_gravity="center"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="13dp"
+                                                android:textColor="#000"
+                                                android:text="Testimonials" />
+                                        </LinearLayout>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v7.widget.CardView
+                                        app:cardCornerRadius="10sp"
+                                        android:layout_margin="7dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="90dp">
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="60dp"
+                                                android:id="@+id/ic_gallery"
+                                                android:src="@drawable/ic_gallery"/>
+
+                                            <TextView
+                                                android:layout_gravity="center"
+                                                android:layout_width="wrap_content"
+                                                android:textSize="13dp"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#000"
+                                                android:text="Gallery" />
+                                        </LinearLayout>
+                                    </android.support.v7.widget.CardView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.4">
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v7.widget.CardView
+                                        app:cardCornerRadius="10sp"
+                                        android:layout_margin="7dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="90dp">
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="60dp"
+                                                android:id="@+id/ic_availibility"
+                                                android:src="@drawable/ic_availibility"/>
+
+                                            <TextView
+                                                android:layout_gravity="center"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="13dp"
+                                                android:textColor="#000"
+                                                android:text="Availability" />
+                                        </LinearLayout>
+                                    </android.support.v7.widget.CardView>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v7.widget.CardView
+                                        app:cardCornerRadius="10sp"
+                                        android:layout_margin="7dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="90dp">
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="60dp"
+                                                android:id="@+id/ic_reach_us"
+                                                android:src="@drawable/ic_reach_us"/>
+
+                                            <TextView
+                                                android:layout_gravity="center"
+                                                android:textSize="13dp"
+                                                android:layout_width="wrap_content"
+                                                android:textColor="#000"
+                                                android:layout_height="wrap_content"
+                                                android:text="Reach Us" />
+                                        </LinearLayout>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent">
+
+                                    <android.support.v7.widget.CardView
+                                        app:cardCornerRadius="10sp"
+                                        android:layout_margin="7dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="90dp">
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="60dp"
+
+
+                                                android:id="@+id/ic_contatc_us"
+                                                android:src="@drawable/ic_contatc_us"/>
+
+                                            <TextView
+                                                android:layout_gravity="center"
+                                                android:layout_width="wrap_content"
+                                                android:textSize="13dp"
+                                                android:textColor="#000"
+                                                android:layout_height="wrap_content"
+                                                android:text="Contact Us" />
+                                        </LinearLayout>
+                                    </android.support.v7.widget.CardView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <Button
+                            android:textColor="#fff"
+                            android:background="@drawable/buutonshape"
+                            android:textSize="13dp"
+                            android:layout_gravity="center"
+                            android:textAllCaps="false"
+                            android:layout_marginTop="10dp"
+                            android:text="Book An Appointment"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+                </ScrollView>
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
+

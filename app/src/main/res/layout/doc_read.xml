@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+android:clickable="true"
+    android:background="#FFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/gelleyimg"
+        android:scaleType="fitStart"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Important Reasons for Dental Consulataons"
+android:textSize="18dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#488aff"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Avance Dental Care is dedicated to offering you best-in-class Dental Care for your implants and restorative work. Our state-of-art infrastructure and use of latest techniques reflect our professionalism and reliability. Our dental care experts have a background of profound clinical experience and a passion to provide you with best available services. Our mission is to provide you best value for money in recognition of your individuality and uniqueness. Besides having the well-qualified dental professionals, we follow stringent standards of sterilization to ensure our customers’ confidence when it comes to safety and cleanliness. We are equipped with most up to date technological advancements to achieve our goal of better treatment and planning Avance Dental Care is dedicated to offering you best-in-class Dental Care for your implants and restorative work. Our state-of-art infrastructure and use of latest techniques reflect our professionalism and reliability. Our dental care experts have a background of profound clinical experience and a passion to provide you with best available services. Our mission is to provide you best value for money in recognition of your individuality and uniqueness. Besides having the well-qualified dental professionals, we follow stringent standards of sterilization to ensure our customers’ confidence when it comes to safety and cleanliness. We are equipped with most up to date technological advancements to achieve our goal of better treatment and planning"
+android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#000"
+        />
+</LinearLayout>
+</ScrollView>

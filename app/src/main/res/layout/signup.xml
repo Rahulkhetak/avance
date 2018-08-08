@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/signup_frame">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/phnum"
+                android:paddingLeft="15dp"
+                android:hint="Phone Number"
+                android:textSize="15dp"
+                android:background="#e6e6e6"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:hint="Email"
+                android:paddingLeft="15dp"
+                android:background="#e6e6e6"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:id="@+id/fullname"
+                android:hint="Full Name"
+                android:paddingLeft="15dp"
+                android:background="#e6e6e6"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:hint="Create Password"
+                android:paddingLeft="15dp"
+                android:background="#e6e6e6"
+                android:textSize="15dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <EditText
+                android:id="@+id/confirmpassword"
+                android:hint="Confirm Password"
+                android:paddingLeft="15dp"
+                android:background="#e6e6e6"
+                android:textSize="15dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+<CheckBox
+    android:layout_width="match_parent"
+            android:id="@+id/reqcheakbox"
+    android:text="I agree all terms and conditions"
+    android:textColor="#488aff"
+    android:layout_gravity="center_vertical"
+android:layout_marginTop="5dp"
+    android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/signUpbtn"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:text="Sign up"
+         android:background="@drawable/buutonshape"
+android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+</ScrollView>
+</FrameLayout>
+    </LinearLayout>

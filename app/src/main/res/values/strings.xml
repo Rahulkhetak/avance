@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Avance_Dental</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="facebook_app_id">2131817680426758</string>
+    <string name="fb_login_protocol_scheme">2131817680426758</string>
+    <string name="refreshedToken">f5PXKmgNwS8:APA91bHxLRDZ35eWW7SXYhgv9wbBHEuc1X1b4ZNQS928jar41tM70y7BakRlfUetyJCnNrKrjW4QnFi6w1gxf3Q0eddWjgBOBRI5IzZ3tQ7x11rQy_e-oK5bpKot8A7xXXzEft3IiPQynlGNsUmjmM-wm63pVLvl5w
+</string>
+    <string name="title_activity_google__map__ap">Map</string>
+</resources>

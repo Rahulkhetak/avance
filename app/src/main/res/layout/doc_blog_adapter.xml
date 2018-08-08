@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="#fff"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cardview_cri"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+
+        android:layout_marginLeft="8dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_cricket"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gellaryim"
+                />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:id="@+id/news_cri"
+
+                android:textColor="#488aff"
+                android:text="Important Reasons for Dental Consulataons"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:id="@+id/new_cri"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:text="A dental consulataons isa non-invasive visit with your dental"
+                /> <TextView
+                android:layout_width="wrap_content"
+    android:layout_gravity="end"
+    android:id="@+id/readmore"
+                android:layout_height="match_parent"
+    android:text="Read more"
+                android:layout_marginRight="10dp"
+                android:textColor="#488aff"
+                />
+
+</LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

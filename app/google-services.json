@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "306620138586",
+    "firebase_url": "https://avancedental-a0f96.firebaseio.com",
+    "project_id": "avancedental-a0f96",
+    "storage_bucket": "avancedental-a0f96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306620138586:android:02164ebc619a8685",
+        "android_client_info": {
+          "package_name": "com.example.acer.avance_dental"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306620138586-745jjtesj69rqg3hbofv92im19oc7qs5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.acer.avance_dental",
+            "certificate_hash": "f0b574613e3f3654aa337fb64e85df5331ddf4e4"
+          }
+        },
+        {
+          "client_id": "306620138586-p11bd12q9rign3mgp3rcmqeu7kn8e8n5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.acer.avance_dental",
+            "certificate_hash": "7ffaecf13c269d80f8df38e7e335e8006bcc1120"
+          }
+        },
+        {
+          "client_id": "306620138586-38heoefsepuiomtcok8dfdb9a5ppqok5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzaKFrbzUVQYpgQTMfIj3QRI70qyuenZM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306620138586-38heoefsepuiomtcok8dfdb9a5ppqok5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
